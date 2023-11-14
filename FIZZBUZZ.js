@@ -35,6 +35,19 @@
 
     alert(out);
 }
-    
-  
+
+const searchBtn = document.getElementById("searchBtn");
+const searchBar = document.getElementById("searchBar");
+const anchor = document.getElementById("anchor");
+let term;
+
+
+searchBtn.onclick
+{
+    term = searchBar.value;
+    location.reload;
+}
+anchor.setAttribute('href', "https://www.google.com/search?q=" + term);
+
+$(".search").reload(projects.html);
 
