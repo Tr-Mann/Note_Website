@@ -5,6 +5,7 @@
         <meta charset = "UTF-8">
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="FIZZBUZZ.js"></script>
     </head>
     <body>
         <h1>JavaScript Notes Site</h1>
@@ -12,7 +13,7 @@
         <div id="sectional"> <h2>Notes:</h2></div>
 
         <!--MONTHS TOOLBAR-->
-        <div id="toolbar"><h3><a href="#stage1"> Stage 1 </a></h3><h3><a href="#stage2"> Stage 2 </a></h3></div>
+        <div id="toolbar"><h3><a href="#stage1"> Stage 1 </a></h3><h3><a href="#stage2"> Stage 2 </a></h3><h3><a href="projects.html"> Projects </a></h3></div>
         <!--STAGE 1 NOTES-->
         <article id="stage1" class="note">
             <h4>Major differences of JavaScript: </h4>
@@ -33,21 +34,18 @@
             <hr>
         </article>
         <article class="note">
-            <h4>FIZZ BUZZ: </h4>
-            <p>FIZZ BUZZ is a common interview question where you are asked to output FIZZ if a number is only divisible evenly by 3
-                or BUZZ if a number is evenly divisible by 5, if it can be evenly divided by both output FIZZBUZZ.</p>
-                <img src="Screenshot 2023-11-13 211616.png">
+            <h4 id="stage2">JavaScript Interaction with HTML: </h4>
+            <p>To make a JavaScript script function properly alongside HTML elements, the script must be loaded after the HTML file is. 
+                Using document.getElementById() you can find a css id value to create an event listener for if the button is clicked. 
+                For pulling content of a text box, you can use .value in order to get the value contained inside of the box.
+            </p>
             <hr>
         </article>
 
         <!--STAGE 2 NOTES-->
-        
-
-        
-        <script src="index.js"></script>
     </body>
     <footer>
         <p>Copyright &bull; ©2023 Tristan Mann &bull; All rights reserved.</p>
-        <form> <input type="text" placeholder="Submit input here"> </form>
+        <form><input id="textBox" type="text" placeholder="Enter a number."><button id="myBtn" type="button">Click Me!</button></form>
     </footer>
 </html>
